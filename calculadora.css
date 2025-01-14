@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.btnav {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    color: #d76c31;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+.btnav:hover {
+    letter-spacing: 3px;
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}   
+
+.logo {
+    display: flex;
+    width: 90px;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    width: 100px;
+    transition: 0.3s ease;
+}
+
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 9em;
+}
+
+.material {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.bt {
+    padding: 10px 15px;
+    background-color: #ca3b3b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bt:hover {
+    background-color: #702222;
+    transition: all 0.3s ease;
+}
+
+
+
+footer {
+    background-color: #222222;
+    color: #d76c31;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20em;
+}
+
+
+@media (max-width: 1100px) {
+    nav {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .section {
+        max-width: 700px;
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    .productos{
+        margin-top: 20em;
+    }
+
+    .productos h1 {
+        margin: 15px 0;
+        margin-top: 15px;
+    }
+    
+    .productos h4 {
+        margin: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 80%; 
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .section {
+        max-width: 500px;
+        font-size: 20px;
+    }
+
+    .productos{
+        margin-top: 21em;
+    }
+}
+
+@media (max-width: 600px) {
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+    
+    .section {
+        max-width: 300px;
+        font-size: 15px;
+    }
+    
+    .productos{
+        margin-top: 23em;
+    }
+
+    .card {
+        width: 90%; 
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 0.8em; 
+    }
+}

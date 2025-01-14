@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora El Chatarral</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <center>
+        <nav id="navbar"> 
+            <div class="contlogo"><a href="index.html"><img class="logo" src="Imagen2.jpg" alt="logo"></a></div>
+            <a href="index.html"><button class="btnav">Inicio</button></a>
+            <a href="calculadora.html"><button class="btnav">Calculadora</button></a>
+            <a href="Acerca de.html"><button class="btnav">¿Quienes Somos?</button></a>
+            <a href="servicios.html"><button class="btnav">Servicios</button></a>
+            <a href="transferencias.html"><button class="btnav">Contacto</button></a>
+        </nav>
+    </center>
+
+    <div class="container">
+        <h1>Calculadora de Chatarra</h1>
+        <div class="material">
+            <label for="material">Selecciona el material:</label>
+            <select id="material">
+                <option value="cobre">Cobre</option>
+                <option value="aluminio">Aluminio</option>
+                <option value="hierro">Hierro</option>
+                <option value="fierro">Fierro Viejo</option>
+                <option value="acero">Acero Inoxidable</option>
+                <option value="bronce">Bronce</option>
+                <option value="plomo">Plomo</option>
+                <option value="chatarra">Chatarra Metálica</option>
+            </select>
+
+            <label for="peso">Peso total (kg):</label>
+            <input type="number" id="peso" placeholder="Introduce el peso en kg">
+        </div>
+        <button class="bt" onclick="calcularTotal()">Calcular Total</button>
+
+        <h2>Total Estimado:</h2>
+        <p id="resultado">$0.00</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - El Chatarral</p>
+    </footer>
+
+    <script>
+        const precios = {
+            cobre: 100,
+            aluminio: 50,
+            hierro: 20,
+            fierro: 10,
+            acero: 80,
+            bronce: 120,
+            plomo: 70,
+            chatarra: 15
+        };
+
+        function calcularTotal() {
+            const material = document.getElementById('material').value;
+            const peso = parseFloat(document.getElementById('peso').value) || 0;
+            const precio = precios[material] || 0;
+
+            const total = precio * peso;
+
+            document.getElementById('resultado').innerText = `Material: ${material.charAt(0).toUpperCase() + material.slice(1)} - Total: $${total.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
