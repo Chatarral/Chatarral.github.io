@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | El Chatarral</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <center>
+        <nav id="navbar"> 
+            <div class="contlogo"><a href="index.html"><img class="logo" src="Imagen2.jpg" alt="logo"></a></div>
+            <a href="index.html"><button>Inicio</button></a>
+            <a href="calculadora.html"><button>Calculadora</button></a>
+            <a href="Acerca de.html"><button>¿Quienes Somos?</button></a>
+            <a href="servicios.html"><button>Servicios</button></a>
+            <a href="transferencias.html"><button>Contacto</button></a>
+        </nav>
+    </center>
+
+
+    <main class="container">
+        <div class="contexto">
+            <h1>EL CHATARRAL</h1>
+            <h6>Transformamos residuos en soluciones</h6>
+        </div>
+
+        <div class="content">
+            <h1>Presentación la microempresa</h1>
+            <p>El Chatarral es una microempresa dedicada a la compra y venta de metales como cobre y aluminio, así como otros materiales reciclables. Nos enfocamos en ofrecer precios justos y un servicio eficiente, apoyando tanto a particulares como a empresas. Con una operación basada en la transparencia y la calidad, buscamos generar confianza en nuestros clientes y contribuir al aprovechamiento responsable de los recursos.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - El Chatarral</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
